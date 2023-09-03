@@ -1,0 +1,77 @@
+ARM COMPILER V2.40a,  Bluetooth_interfacing                                                03/09/23  08:22:22  PAGE 1   
+
+
+ARM COMPILER V2.40a, COMPILATION OF MODULE Bluetooth_interfacing
+OBJECT MODULE PLACED IN Bluetooth_interfacing.OBJ
+COMPILER INVOKED BY: C:\Keil\ARM\BIN\CA.exe Bluetooth_interfacing.c THUMB BROWSE DEBUG TABS(4) 
+
+stmt  level    source
+
+    1          #include "LPC214X.h"
+    2          
+    3          void Uart0Init(unsigned int baudrate)     
+    4          { 
+    5   1          unsigned int FDiv;                     
+    6   1          PINSEL0 |= 0x00000005;           //Enable RxD0 and TxD0                    
+    7   1          U0LCR = 0x83;                   // 8 bits, no Parity, 1 Stop bit
+    8   1          FDiv = (15000000 / 16 ) / baudrate ; //
+    9   1          U0DLM = FDiv /256;                  //0x00;
+   10   1          U0DLL = FDiv %256;                  //0x97;        
+   11   1          U0LCR = 0x03;                   // DLAB = 0   
+   12   1      }
+   13          
+   14          unsigned char UART0_PutChar(unsigned char Ch)
+   15          {
+   16   1          while(!(U0LSR & 0x20));
+   17   1      //  if(Ch == '\n')
+   18   1      //      Ch = 0x0D;
+   19   1          U0THR = Ch;
+   20   1          return Ch;
+   21   1      }
+   22          
+   23          void UART0_SendString(char* str) /* A function to send string on UART0 */
+   24          {
+   25   1          int i = 0;
+   26   1          while( str[i] != '\0' )
+   27   1          {
+   28   2              UART0_PutChar(str[i]);
+   29   2              i++;
+   30   2          }
+   31   1      }
+   32          
+   33          unsigned char UART0_GetChar(void)
+   34          {
+   35   1          while(!(U0LSR & 0x01));
+   36   1          return(U0RBR);
+   37   1      }
+   38          
+   39          int main (void)
+   40          {
+   41   1          char data_in;
+   42   1          Uart0Init(9600);
+   43   1          UART0_SendString("All OK")
+   44   1          IO0DIR = IO0DIR | 0x00000010;   /* Configure P0.4 as output */
+*** ERROR C86 IN LINE 44 OF BLUETOOTH_INTERFACING.C: '()': 'void' illegal with all types
+   45   1          while(1)
+   46   1          {
+   47   2              data_in = UART0_GetChar();  /* Receive data from bluetooth */
+   48   2              if ( data_in == '1' )   /* If data received is 1 */
+   49   2              {
+   50   3                  IO0PIN = ( IO0PIN | 0x00000010 );
+   51   3                  UART0_PutChar('H');
+   52   3      
+   53   3              }
+   54   2              else if ( data_in == '0' )  /* If data received is 0 */
+   55   2              {
+   56   3                  IO0PIN = ( IO0PIN & 0xFFFFFFEF );
+   57   3                  UART0_PutChar('L');
+   58   3              }
+ARM COMPILER V2.40a,  Bluetooth_interfacing                                                03/09/23  08:22:22  PAGE 2   
+
+   59   2              else
+   60   2                  UART0_PutChar('W');
+   61   2      
+   62   2          }
+   63   1      }
+
+ARM COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)

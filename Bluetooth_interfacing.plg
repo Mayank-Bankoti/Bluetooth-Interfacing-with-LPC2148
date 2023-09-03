@@ -7,3 +7,416 @@ C:\Users\mayan\Documents\ARM\Bluetooth Interfaing with LPC2148\Bluetooth_interfa
 Project File Date:  09/02/2023
 
 <h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(15): error C25: syntax error near '`'
+BLUETOOTH_INTERFACING.C(15): error C25: syntax error near 'volatile'
+BLUETOOTH_INTERFACING.C(15): error C25: syntax error near ')'
+BLUETOOTH_INTERFACING.C(15): warning C34: 'ch': missing declaration specifiers
+BLUETOOTH_INTERFACING.C(15): error C53: redefinition of 'ch'
+BLUETOOTH_INTERFACING.C(16): error C25: syntax error near 'while'
+BLUETOOTH_INTERFACING.C(16): error C25: syntax error near 'volatile'
+BLUETOOTH_INTERFACING.C(16): error C25: syntax error near ')'
+BLUETOOTH_INTERFACING.C(22): error C25: syntax error near '`'
+BLUETOOTH_INTERFACING.C(22): error C25: syntax error near 'volatile'
+BLUETOOTH_INTERFACING.C(22): error C25: syntax error near ')'
+BLUETOOTH_INTERFACING.C(23): error C25: syntax error near 'volatile'
+BLUETOOTH_INTERFACING.C(23): error C25: syntax error near ')'
+BLUETOOTH_INTERFACING.C(23): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(22): error C25: syntax error near '`'
+BLUETOOTH_INTERFACING.C(22): error C25: syntax error near 'volatile'
+BLUETOOTH_INTERFACING.C(22): error C25: syntax error near ')'
+BLUETOOTH_INTERFACING.C(23): error C25: syntax error near 'volatile'
+BLUETOOTH_INTERFACING.C(23): error C25: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C?INIT
+    ADDRESS: 00000104H
+Program Size: data=1168 const=16 code=296
+Target not created
+Build target 'Target 1'
+linking...
+Program Size: data=0 const=16 code=0
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(36): error C144: 'array': initialization needs curly braces
+BLUETOOTH_INTERFACING.C(41): warning C140: 'UART0_init' undefined; assuming 'extern int UART0_init()'
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(36): error C144: 'array': initialization needs curly braces
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=500
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=500
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(38): warning C140: 'UART0_init' undefined; assuming 'extern int UART0_init()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_init?T
+    ADDRESS: 0000014EH
+Program Size: data=1288 const=55 code=456
+Target not created
+Build target 'Target 1'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_init?T
+    ADDRESS: 0000014EH
+Program Size: data=1288 const=55 code=456
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=500
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=500
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=500
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(22): warning C140: 'UART0_RxChar' undefined; assuming 'extern int UART0_RxChar()'
+BLUETOOTH_INTERFACING.C(26): warning C140: 'UART0_SendString' undefined; assuming 'extern int UART0_SendString()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_RxChar?T
+    ADDRESS: 0000013AH
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 0000015EH
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 00000182H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 00000190H
+Program Size: data=1288 const=55 code=440
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(39): warning C140: 'UART0_RxChar' undefined; assuming 'extern int UART0_RxChar()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_RxChar?T
+    ADDRESS: 00000176H
+Program Size: data=1288 const=55 code=480
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(41): warning C140: 'UART0_SendString' undefined; assuming 'extern int UART0_SendString()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 00000170H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 00000194H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 000001A2H
+Program Size: data=1288 const=55 code=456
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(50): error C25: syntax error near '}'
+BLUETOOTH_INTERFACING.C(52): error C7: compilation aborted
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(44): error C25: syntax error near '{'
+BLUETOOTH_INTERFACING.C(51): error C25: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=408
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=500
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(49): warning C140: 'UART0_SendString' undefined; assuming 'extern int UART0_SendString()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000016H  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_SendString?T
+    ADDRESS: 000001B2H
+Program Size: data=1288 const=38 code=472
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=468
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=468
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(38): warning C140: 'transmit' undefined; assuming 'extern int transmit()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      0000001EH  
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  transmit?T
+    ADDRESS: 00000136H
+Program Size: data=1288 const=46 code=372
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(38): error C76: formal parameter ignored
+BLUETOOTH_INTERFACING.C(38): error C25: syntax error near '['
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      0000001EH  
+Program Size: data=1288 const=46 code=392
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=468
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=472
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=472
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(36): warning C140: 'UART_init' undefined; assuming 'extern int UART_init()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART_init?T
+    ADDRESS: 0000012EH
+Program Size: data=1288 const=16 code=428
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=480
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=480
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+*** WARNING L30: MEMORY SPACE OVERLAP
+    FROM:    00000000H  
+    TO:      00000027H  
+Program Size: data=1288 const=55 code=508
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=476
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=476
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=476
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=476
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=476
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(42): warning C140: 'UART0_RxChar' undefined; assuming 'extern int UART0_RxChar()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_RxChar?T
+    ADDRESS: 0000015EH
+Program Size: data=1288 const=16 code=456
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+linking...
+Program Size: data=1288 const=16 code=476
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+BLUETOOTH_INTERFACING.C(42): warning C140: 'UART0_init' undefined; assuming 'extern int UART0_init()'
+BLUETOOTH_INTERFACING.C(46): warning C140: 'receive' undefined; assuming 'extern int receive()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_init?T
+    ADDRESS: 000000FAH
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  receive?T
+    ADDRESS: 00000110H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_TxChar?T
+    ADDRESS: 00000134H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_TxChar?T
+    ADDRESS: 00000158H
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_TxChar?T
+    ADDRESS: 00000166H
+Program Size: data=1288 const=16 code=396
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+BLUETOOTH_INTERFACING.C(42): warning C140: 'UART0_init' undefined; assuming 'extern int UART0_init()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  UART0_init?T
+    ADDRESS: 00000136H
+Program Size: data=1288 const=16 code=432
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+BLUETOOTH_INTERFACING.C(42): warning C96: 'Uart0Init': too few actual parameters
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1288 const=16 code=580
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1288 const=16 code=584
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1288 const=16 code=584
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+linking...
+*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
+Program Size: data=1288 const=16 code=584
+creating hex file from "Bluetooth_interfacing"...
+"Bluetooth_interfacing" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(28): warning C140: 'UART0_TxChar' undefined; assuming 'extern int UART0_TxChar()'
+BLUETOOTH_INTERFACING.C(44): error C86: '()': 'void' illegal with all types
+Target not created
+Build target 'Target 1'
+compiling Bluetooth_interfacing.c...
+BLUETOOTH_INTERFACING.C(44): error C86: '()': 'void' illegal with all types
+Target not created
