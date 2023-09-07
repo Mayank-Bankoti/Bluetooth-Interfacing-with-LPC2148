@@ -13,8 +13,7 @@
 Target (Target 1), 0x0005 // Tools: ''
 GRPOPT 1,(Source Group 1),1,0,0
 
-OPTFFF 1,1,1,3,0,42,42,0,<.\Bluetooth_interfacing.c><Bluetooth_interfacing.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,26,0,0,0,26,0,0,0,40,4,0,0,63,1,0,0 }
-OPTFFF 1,2,2,0,0,0,0,0,<.\Startup.s><Startup.s> 
+OPTFFF 1,1,1,335544323,0,2,11,0,<.\Bluetooth_interfacing.c><Bluetooth_interfacing.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,26,0,0,0,26,0,0,0,40,4,0,0,63,1,0,0 }
 
 
 TARGOPT 1, (Target 1)

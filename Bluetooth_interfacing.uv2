@@ -6,6 +6,7 @@ Target (Target 1), 0x0005 // Tools: ''
 Group (Source Group 1)
 
 File 1,1,<.\Bluetooth_interfacing.c><Bluetooth_interfacing.c> 0x0 
+File 1,2,<.\Startup.s><Startup.s> 0x0 
 
 
 Options 1,0,0  // Target 'Target 1'
@@ -32,7 +33,7 @@ Options 1,0,0  // Target 'Target 1'
  EnvLib ()
  EnvReg (ÿPhilips\)
  OrgReg (ÿPhilips\)
- TgStat=25
+ TgStat=16
  OutDir (.\)
  OutName (Bluetooth_interfacing)
  GenApp=1

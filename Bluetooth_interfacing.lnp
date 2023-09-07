@@ -1,4 +1,5 @@
-"Bluetooth_interfacing.obj" 
+"Bluetooth_interfacing.obj",
+"Startup.obj" 
 TO "Bluetooth_interfacing" 
 CASE 
 CLASSES (DATA (0x40000000-0x40007FFF), 

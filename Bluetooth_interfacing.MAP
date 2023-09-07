@@ -1,9 +1,9 @@
-LARM LINKER/LOCATER V2.40                                                               09/03/2023  08:16:25  PAGE 1
+LARM LINKER/LOCATER V2.40                                                               09/07/2023  06:46:06  PAGE 1
 
 
 LARM LINKER/LOCATER V2.40, INVOKED BY:
-C:\KEIL\ARM\BIN\LA.EXE Bluetooth_interfacing.obj TO Bluetooth_interfacing CASE CLASSES (DATA (0X40000000-0X40007FFF), CO
->> DE (0X0-0X7FFFF), CONST (0X0-0X7FFFF))
+C:\KEIL\ARM\BIN\LA.EXE Bluetooth_interfacing.obj, Startup.obj TO Bluetooth_interfacing CASE CLASSES (DATA (0X40000000-0X
+>> 40007FFF), CODE (0X0-0X7FFFF), CONST (0X0-0X7FFFF))
 
 
 CPU MODE: LITTLE ENDIAN
@@ -12,9 +12,7 @@ CPU MODE: LITTLE ENDIAN
 INPUT MODULES INCLUDED:
   Bluetooth_interfacing.obj (Bluetooth_interfacing)
          COMMENT TYPE 0: CARM V2.40a
-  C:\KEIL\ARM\LIB\CAL.LIB (STARTUP)
-         COMMENT TYPE 0: AA V2.40a
-  C:\KEIL\ARM\LIB\CAL.LIB (UDIV)
+  Startup.obj (STARTUP)
          COMMENT TYPE 0: AA V2.40a
   C:\KEIL\ARM\LIB\CAL.LIB (FIQ)
          COMMENT TYPE 0: AA V2.40a
@@ -34,9 +32,9 @@ ACTIVE MEMORY CLASSES OF MODULE:  Bluetooth_interfacing (Bluetooth_interfacing)
 
 BASE       START      END        USED       MEMORY CLASS
 ========================================================
-00000000H  40000000H  40007FFFH  00000508H  DATA
-00000000H  00000000H  0007FFFFH  00000248H  CODE
-00000000H  00000000H  0007FFFFH  00000010H  CONST
+00000000H  40000000H  40007FFFH  00000490H  DATA
+00000000H  00000000H  0007FFFFH  00000264H  CODE
+00000000H  00000000H  0007FFFFH  00000037H  CONST
 
 
 
@@ -44,21 +42,23 @@ MEMORY MAP OF MODULE:  Bluetooth_interfacing (Bluetooth_interfacing)
 
 START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
 =========================================================================
-00000000H  000000B3H  000000B4H     4  AT..   CODE           STARTUPCODE
-000000B4H  000000BBH  00000008H     4  UNIT   CONST          ?C_CLRSEG
-000000BCH  000000C3H  00000008H     4  UNIT   CONST          ?C_INITSEG
-000000C4H  00000113H  00000050H     4  UNIT   CODE           ?PR?Uart0Init?T?Bluetooth_interfacing
-00000114H  00000137H  00000024H     4  UNIT   CODE           ?PR?UART0_PutChar?T?Bluetooth_interfacing
-00000138H  0000014FH  00000018H     4  UNIT   CODE           ?PR?UART0_GetChar?T?Bluetooth_interfacing
-00000150H  000001F7H  000000A8H     4  UNIT   CODE           ?PR?main?Bluetooth_interfacing
-000001F8H  0000023FH  00000048H     4  UNIT   CODE           ?PR?C?UDIV
-00000240H  00000243H  00000004H     4  UNIT   CODE           ?C?FIQ
-00000244H  00000247H  00000004H     4  UNIT   CODE           ?C?IRQ
-00000248H  0000024BH  00000004H     4  UNIT   CODE           ?C?DABT
-0000024CH  0000024FH  00000004H     4  UNIT   CODE           ?C?PABT
-00000250H  00000257H  00000008H     4  UNIT   CODE           ?C?UNDEF
-00000258H  3FFFFFFFH  3FFFFDA8H   ---  ---    **GAP**
-40000000H  40000507H  00000508H     4  UNIT   DATA           STACK
+00000000H  0000010FH  00000110H     4  AT..   CODE           STARTUPCODE
+00000110H  00000136H  00000027H     4  UNIT   CONST          ?CON?Bluetooth_interfacing
+00000137H  00000137H  00000001H   ---  ---    **GAP**
+00000138H  0000013FH  00000008H     4  UNIT   CONST          ?C_CLRSEG
+00000140H  00000147H  00000008H     4  UNIT   CONST          ?C_INITSEG
+00000148H  0000017FH  00000038H     4  UNIT   CODE           ?PR?UART0_init?T?Bluetooth_interfacing
+00000180H  0000019BH  0000001CH     4  UNIT   CODE           ?PR?UART0_TxChar?T?Bluetooth_interfacing
+0000019CH  000001BBH  00000020H     4  UNIT   CODE           ?PR?UART0_SendString?T?Bluetooth_interfacing
+000001BCH  000001D3H  00000018H     4  UNIT   CODE           ?PR?UART0_RxChar?T?Bluetooth_interfacing
+000001D4H  00000283H  000000B0H     4  UNIT   CODE           ?PR?main?Bluetooth_interfacing
+00000284H  00000287H  00000004H     4  UNIT   CODE           ?C?FIQ
+00000288H  0000028BH  00000004H     4  UNIT   CODE           ?C?IRQ
+0000028CH  0000028FH  00000004H     4  UNIT   CODE           ?C?DABT
+00000290H  00000293H  00000004H     4  UNIT   CODE           ?C?PABT
+00000294H  0000029BH  00000008H     4  UNIT   CODE           ?C?UNDEF
+0000029CH  3FFFFFFFH  3FFFFD64H   ---  ---    **GAP**
+40000000H  4000048FH  00000490H     4  UNIT   DATA           STACK
 
 
 
@@ -66,8 +66,8 @@ REMOVED FUNCTIONS OF MODULE:  Bluetooth_interfacing (Bluetooth_interfacing)
 
       ATTRIBUTE  FUNCTION NAME
       ========================
-       unused    UART0_SendString?T
-LARM LINKER/LOCATER V2.40                                                             09/03/2023  08:16:25  PAGE 2
+       unused    delay_ms?T
+LARM LINKER/LOCATER V2.40                                                             09/07/2023  06:46:06  PAGE 2
 
 
 
@@ -77,35 +77,24 @@ PUBLIC SYMBOLS OF MODULE:  Bluetooth_interfacing (Bluetooth_interfacing)
 
       VALUE      CLASS    TYPE      PUBLIC SYMBOL NAME
       ================================================
-      000000B4H  ---      ---       ?C?CLRTAB
-      00000150H  ---      ---       ?C?INIT
-      000000BCH  ---      ---       ?C?INITTAB
-      000001FCH  CODE     ---       ?C?UDIV?A
-      000001F8H  CODE     ---       ?C?UDIV?T
-      00000248H  CODE     ---       DAbt_Handler?A
-      00000240H  CODE     ---       FIQ_Handler?A
-      00000244H  CODE     ---       IRQ_Handler?A
-      0000024CH  CODE     ---       PAbt_Handler?A
-      00000250H  CODE     ---       SWI_Handler?A
-      00000138H  CODE     ---       UART0_GetChar?T
-      00000114H  CODE     ---       UART0_PutChar?T
-      00000000H  CODE     ---       UART0_SendString?T
-      *EXTERN*   CODE     ---       UART0_TxChar?T
-      000000C4H  CODE     ---       Uart0Init?T
-      00000254H  CODE     ---       Undef_Handler?A
+      00000138H  ---      ---       ?C?CLRTAB
+      000001D4H  ---      ---       ?C?INIT
+      00000140H  ---      ---       ?C?INITTAB
+      0000028CH  CODE     ---       DAbt_Handler?A
+      00000284H  CODE     ---       FIQ_Handler?A
+      00000288H  CODE     ---       IRQ_Handler?A
+      00000290H  CODE     ---       PAbt_Handler?A
+      00000294H  CODE     ---       SWI_Handler?A
+      000001BCH  CODE     ---       UART0_RxChar?T
+      0000019CH  CODE     ---       UART0_SendString?T
+      00000180H  CODE     ---       UART0_TxChar?T
+      00000148H  CODE     ---       UART0_init?T
+      00000298H  CODE     ---       Undef_Handler?A
       00000000H  CODE     ---       __startup
-      0000009CH  CODE     ---       exit?A
-      000000A0H  CODE     ---       exit?T
-      00000184H  CODE     ---       main
+      00000000H  CODE     ---       delay_ms?T
+      000000F0H  CODE     ---       exit?A
+      000000F4H  CODE     ---       exit?T
+      00000208H  CODE     ---       main
 
-
-
-UNRESOLVED EXTERNAL SYMBOLS:
-   UART0_TxChar?T
-
-
-
-*** WARNING L23: UNRESOLVED EXTERNAL SYMBOLS
-
-Program Size: data=1288 const=16 code=584
-LARM RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
+Program Size: data=1168 const=55 code=612
+LARM RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

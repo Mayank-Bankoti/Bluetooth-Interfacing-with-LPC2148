@@ -1,4 +1,4 @@
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     1
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     1
 
 
 MACRO ASSEMBLER AA V2.40a
@@ -65,7 +65,7 @@ LOC      OBJ             LINE     SOURCE
                          56     
                          57     
                          58     
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     2
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     2
 
                          59     
                          60     
@@ -133,7 +133,7 @@ LOC      OBJ             LINE     SOURCE
                         122     
                         123     
                         124     
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     3
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     3
 
                         125     
                         126     
@@ -201,7 +201,7 @@ LOC      OBJ             LINE     SOURCE
                         188     
                         189     
                         190     
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     4
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     4
 
                         191     
                         192     
@@ -269,7 +269,7 @@ LOC      OBJ             LINE     SOURCE
                         254     
                         255     
                         256     
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     5
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     5
 
                         257     EXTERN CODE32 (Undef_Handler?A)
                         258     EXTERN CODE32 (SWI_Handler?A)
@@ -337,7 +337,7 @@ LOC      OBJ             LINE     SOURCE
                                                 STR     R1, [R0, #BCFG3_OFS]
                                 ENDIF
                                 
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     6
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     6
 
                                 ENDIF
                         324     
@@ -405,7 +405,7 @@ LOC      OBJ             LINE     SOURCE
                         386     
                         387     
 00000098 E321F0DB       388                     MSR     CPSR_c, #Mode_UND|I_Bit|F_Bit
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     7
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     7
 
 0000009C E1A0D000       389                     MOV     SP, R0
 000000A0 E2400004       390                     SUB     R0, R0, #UND_Stack_Size
@@ -454,7 +454,7 @@ LOC      OBJ             LINE     SOURCE
                         433     
                         434     
                         435                     END
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     8
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     8
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -522,7 +522,7 @@ PLL_Loop . . . . .  C  ADDR  0064H     R   SEG=STARTUPCODE
 PLL_SETUP. . . . .  -- ----  0001H     A   
 Reset_Addr . . . .  C  ADDR  0020H     R   SEG=STARTUPCODE
 Reset_Handler. . .  C  ADDR  0040H     R   SEG=STARTUPCODE
-AA MACRO ASSEMBLER RSTARTUP                                                                 02/09/23 18:55:23 PAGE     9
+AA MACRO ASSEMBLER RSTARTUP                                                                 07/09/23 06:46:06 PAGE     9
 
 STACK. . . . . . .  D  SEG   0490H         REL=UNIT, ALN=BYTE
 STARTUPCODE. . . .  C  SEG   00F6H         REL=ABS, ALN=BYTE
